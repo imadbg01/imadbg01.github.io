@@ -1,8 +1,64 @@
-#app {
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  background-image: repeating-linear-gradient(to left, #2c3e50, #040c29);
+  color: #fff;
+}
+
+header {
+  background-image: linear-gradient(to left, #b00eeb, #345689);
+  height: 12vh;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
+  height: 100%;
+}
+
+nav {
+  width: 30%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
   color: #2c3e50;
-  margin-top: 60px;
+  font-size: 1.25rem;
+  font-style: oblique;
+}
+
+main .container {
+  width: 85%;
+  margin: auto;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+main {
+  padding: 3rem 0;
+  height: 80vh;
+}
+
+main h2 {
+  font-size: 3rem;
+  text-align: center;
 }
