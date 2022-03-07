@@ -10,12 +10,24 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: repeating-linear-gradient(to left, #2c3e50, #040c29);
+  /* background-image: repeating-linear-gradient(to left, #2c3e50, #040c29); */
   color: #fff;
+  animation: corelative 5000ms linear infinite alternate;
+  transition: background-image 750ms ease-in-out;
+}
+
+@keyframes corelative {
+  from {
+    background-image: linear-gradient(to left, #0a0fff, #0b0c69);
+  }
+
+  to {
+    background-image: linear-gradient(to left, #261875, #2949ff);
+  }
 }
 
 header {
-  background-image: linear-gradient(to left, #b00eeb, #345689);
+  background-image: linear-gradient(to left, #9bcdfb, #345689);
   height: 12vh;
 }
 
