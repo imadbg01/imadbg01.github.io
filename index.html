@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Imad Boudguigue</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
-
     <!--  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,33 +13,42 @@
       rel="stylesheet"
     />
     <!--  -->
+    <link rel="icon" type="image/png" href="./public/favicon.png">
   </head>
   <body>
     <!-- ------------------------- -->
     <header id="primary-header">
       <div class="wrapper">
         <nav class="primary-nav">
-          <ul>
+          <ul class="nav-links">
             <li>
-              <a href="#"><span> //01.</span> &#x3C;Home/&#x3E;</a>
+              <a class="nav-link"  href="#"><span> //01.</span> &#x3C;Home/&#x3E;</a>
             </li>
             <li>
-              <a href="#"><span> //02.</span> &#x3C;Portfolio/&#x3E;</a>
+              <a class="nav-link" href="#"><span> //02.</span> &#x3C;Portfolio/&#x3E;</a>
             </li>
           </ul>
 
-          <div class="logo">
-            <span> ./imad </span>
+          <!-- theme switcher and logo -->
+          <div class="brand">
+            <div class="logo">
+              <img src="./assets/img/logo_light.svg" alt="">
+            </div>
             <div>
-              <input type="checkbox" name="" id="theme-toggle" />
+              <label class="switch">
+                <input type="checkbox" name="theme_switch"  id="theme-toggle">
+                <!-- <span class="slider"></span> -->
+              </label>
             </div>
           </div>
-          <ul>
+
+          <!--  -->
+          <ul class="nav-links">
             <li>
-              <a href="#"><span> //03.</span> &#x3C;Press/&#x3E;</a>
+              <a class="nav-link"  href="#"><span> //03.</span> &#x3C;Press/&#x3E;</a>
             </li>
             <li>
-              <a href="#"><span> //04.</span> &#x3C;Contact/&#x3E;</a>
+              <a class="nav-link"  href="#"><span> //04.</span> &#x3C;Contact/&#x3E;</a>
             </li>
           </ul>
         </nav>
@@ -51,11 +59,18 @@
     <main>
       <!-- HOME -->
       <section id="home">
-        <div>
-          <p>This is</p>
-          <h1>Imad Boudguigue</h1>
-          <p>grocery store manager and Software Developer from Morocco</p>
+        <div class="wrapper cols">
+        <div class="home-intro">
+          <p class="intro-p">This is</p>
+          <h1 class="author-name">Imad Boudguigue</h1>
+          <p class="intro-p">grocery store manager and Software Developer from Morocco</p>
         </div>
+        <div class="home-img">
+          <div class="download-cv">
+
+          </div>
+        </div>
+      </div>
       </section>
       <!-- Portfolio -->
 

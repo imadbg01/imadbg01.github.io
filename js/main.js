@@ -1,6 +1,10 @@
+// DOM Elements 
+
 const htmlTheme = document.querySelector('html')
 const themeToggle = document.querySelector("#theme-toggle")
+const logo = document.querySelector(".logo img")
 
+// Events
 themeToggle.addEventListener("change", switchTheme)
 
 if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -11,13 +15,18 @@ if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
   themeToggle.checked = false
 }
 
+// Functions
+
+
 function switchTheme() {
   const theme = htmlTheme.getAttribute("data-theme")
   if (theme === "light") {
     htmlTheme.setAttribute("data-theme", "dark")
+    logo.setAttribute("src", "./assets/img/logo_light.svg")
     htmlTheme.classList.toggle("fadeIn")
   } else {
     htmlTheme.setAttribute("data-theme", "light")
+    logo.setAttribute("src", "./assets/img/logo_dark.svg")
     htmlTheme.classList.toggle("fadeIn")
 
   }
