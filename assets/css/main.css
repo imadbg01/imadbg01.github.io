@@ -1,0 +1,71 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: unset;
+  margin: unset;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html[data-theme=light] {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(240deg, 19%, 8%);
+}
+
+html[data-theme=dark] {
+  background-color: hsl(240deg, 19%, 8%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+a {
+  color: #04C978;
+}
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper {
+  max-width: 90rem;
+  padding-inline: 3rem;
+  margin-inline: auto;
+}
+
+#primary-header {
+  padding-block: 2rem;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  font-weight: 400;
+}
+
+a {
+  font-family: "Fira Code", monospace;
+  font-weight: 500;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Berkshire Swash", cursive;
+  font-weight: 400;
+}
+
+.fadeIn {
+  animation: fadeIn 800ms ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

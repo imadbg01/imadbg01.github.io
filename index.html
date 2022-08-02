@@ -1,35 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Imad Boudguigue</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div>
-          <h1>imadbg01</h1>
-        </div>
-        <nav>
+    <!-- ------------------------- -->
+    <header id="primary-header">
+      <div class="wrapper">
+        <nav class="primary-nav">
           <ul>
-            <li><a href="pages/about.html">about</a></li>
-            <li><a href="pages/projects.html">project</a></li>
+            <li>
+              <a href="#"><span> //01.</span> &#x3C;Home/&#x3E;</a>
+            </li>
+            <li>
+              <a href="#"><span> //02.</span> &#x3C;Portfolio/&#x3E;</a>
+            </li>
+          </ul>
+
+          <div class="logo">
+            <span> ./imad </span>
+            <div>
+              <input type="checkbox" name="" id="theme-toggle" />
+            </div>
+          </div>
+          <ul>
+            <li>
+              <a href="#"><span> //03.</span> &#x3C;Press/&#x3E;</a>
+            </li>
+            <li>
+              <a href="#"><span> //04.</span> &#x3C;Contact/&#x3E;</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
+    <!-- ------------------------- -->
 
     <main>
-      <div class="container">
-        <h2>Welcome to imad portfolio</h2>
-      </div>
+      <!-- HOME -->
+      <section id="home">
+        <div>
+          <p>This is</p>
+          <h1>Imad Boudguigue</h1>
+          <p>grocery store manager and Software Developer from Morocco</p>
+        </div>
+      </section>
+      <!-- Portfolio -->
+
+      <!-- Press -->
+
+      <!-- Contact -->
     </main>
+
+    <footer></footer>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
