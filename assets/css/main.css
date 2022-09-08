@@ -16,18 +16,13 @@ p {
   max-width: 60ch;
 }
 
-html[data-theme=light] {
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(240deg, 19%, 8%);
-}
-
-html[data-theme=dark] {
-  background-color: hsl(240deg, 19%, 8%);
-  color: hsl(0deg, 0%, 100%);
+body {
+  background-color: hsl(115deg, 100%, 95%);
+  color: hsl(240deg, 100%, 11%);
 }
 
 a {
-  color: hsl(122deg, 96%, 40%);
+  color: hsl(113deg, 100%, 22%);
 }
 
 .primary-nav {
